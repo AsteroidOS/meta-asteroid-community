@@ -1,4 +1,4 @@
-SUMMARY = "gpsp GB/GBA emulator"
+SUMMARY = "gpsp GBA emulator"
 HOMEPAGE = "https://github.com/MagneFire/gpsp"
 LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://COPYING.DOC;md5=892f569a555ba9c07a568a7c0c4fa63a"

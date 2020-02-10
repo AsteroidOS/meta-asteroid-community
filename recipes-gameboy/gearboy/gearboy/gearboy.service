@@ -1,0 +1,15 @@
+[Unit]
+Description=Gearboy
+ConditionUser=!root
+Conflicts=asteroid-launcher.service
+
+[Service]
+Type=simple
+EnvironmentFile=-/var/lib/environment/compositor/*.conf
+EnvironmentFile=-%h/.gpsp/*.conf
+ExecStartPre=-/usr/sbin/mcetool -D on
+ExecStart=/usr/bin/gearboy
+ExecStopPost=-/usr/sbin/mcetool -D off ; systemctl --user start asteroid-launcher
+
+[Install]
+WantedBy=default.target
