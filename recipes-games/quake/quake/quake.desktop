@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Categories=Applications;
+Exec=sh -c "mcetool -Don; quake-gles2 -scale 0.8 -fullscreen -basedir /home/ceres/ ; mcetool -Doff"
+Icon=ios-game-controller-a-outline
+X-Asteroid-Center-Color=#dfb103
+X-Asteroid-Outer-Color=#be4e0e
+Name=Quake
+Name[en_GB]=Quake

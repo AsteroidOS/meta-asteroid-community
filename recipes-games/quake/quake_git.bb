@@ -5,6 +5,7 @@ LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
 
 SRC_URI = "git://github.com/MagneFire/lp-public.git;protocol=https \
+    file://quake.desktop \
 "
 SRCREV = "${AUTOREV}"
 PR = "r1"
@@ -32,6 +33,9 @@ do_compile() {
 do_install() {
     install -d ${D}${bindir}
     cp Ports/Quake1/Output/Targets/Linux-x86-32/Release/bin/* ${D}${bindir}
+
+    install -d ${D}/usr/share/applications/
+    cp ../quake.desktop ${D}/usr/share/applications/
 }
 
 DEPENDS += "libsdl2 zlib libhybris android"
