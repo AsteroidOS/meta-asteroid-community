@@ -66,7 +66,6 @@ PACKAGECONFIG ??= " \
   menu-materialui \
   menu-ozone \
   menu-rgui \
-  menu-stripes \
   menu-xmb \
   threads \
   threads-storage \
