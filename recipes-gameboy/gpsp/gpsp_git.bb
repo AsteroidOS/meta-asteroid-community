@@ -39,5 +39,5 @@ do_install() {
     cp ../gpsp.service ${D}/usr/lib/systemd/user/
 }
 
-DEPENDS += "libsdl zlib libhybris android"
-RDEPENDS_${PN} += "libsdl zlib libhybris"
+DEPENDS += "libsdl2 zlib libhybris android"
+RDEPENDS_${PN} += "libsdl2 zlib libhybris"
