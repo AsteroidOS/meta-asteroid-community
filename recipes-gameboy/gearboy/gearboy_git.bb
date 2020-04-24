@@ -32,5 +32,5 @@ do_install() {
     cp ../gearboy.service ${D}/usr/lib/systemd/user/
 }
 
-DEPENDS += "libsdl zlib libhybris android libconfig"
-RDEPENDS_${PN} += "libsdl zlib libhybris libconfig"
+DEPENDS += "libsdl2 zlib libhybris android libconfig"
+RDEPENDS_${PN} += "libsdl2 zlib libhybris libconfig"
