@@ -1,4 +1,4 @@
-SUMMARY = "gpSP frontend for AsteroidOS"
+SUMMARY = "gpSP/Gearboy frontend for AsteroidOS"
 HOMEPAGE = "https://github.com/MagneFire/gpsp-menu.git"
 LICENSE = "GPLv3"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=84dcc94da3adb52b53ae4fa38fe49e5d"
@@ -9,6 +9,13 @@ PR = "r1"
 PV = "+git${SRCPV}"
 S = "${WORKDIR}/git"
 inherit qmake5
+
+do_install_append() {
+    install -d ${D}/usr/share/icons/asteroid/
+    cp ${S}/i18n/gameboy.svg ${D}/usr/share/icons/asteroid/
+}
+
+FILES_${PN} += "/usr/share/icons/asteroid/"
 
 DEPENDS += "qml-asteroid qtdeclarative-native"
 RDEPENDS_${PN} += "qtsensors qtsensors-qmlplugins qtsensors-plugins gpsp"
