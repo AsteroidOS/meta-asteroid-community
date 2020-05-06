@@ -7,6 +7,7 @@ SRC_URI = "git://github.com/sinamas/gambatte.git;protocol=https \
     file://0001-yocto-paths-fix.patch \
     file://0002-sdl-to-sdl2.patch \
     file://0003-rtc-fix.patch \
+    file://0004-center-video.patch \
 "
 SRCREV = "${AUTOREV}"
 PR = "r1"

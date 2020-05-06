@@ -1,0 +1,38 @@
+diff --git a/gambatte_sdl/src/sdlblitter.cpp b/gambatte_sdl/src/sdlblitter.cpp
+index c98a2329..66953403 100644
+--- a/gambatte_sdl/src/sdlblitter.cpp
++++ b/gambatte_sdl/src/sdlblitter.cpp
+@@ -32,6 +32,8 @@ SdlBlitter::SdlBlitter(unsigned inwidth, unsigned inheight,
+            ? SDL_CreateRGBSurface(SDL_SWSURFACE, inwidth, inheight,
+                                   screen_surface_->format->BitsPerPixel, 0, 0, 0, 0)
+            : nullptr) {
++	width = inwidth * scale;
++	height = inheight * scale;
+ }
+ SdlBlitter::~SdlBlitter() {
+ }
+@@ -40,7 +42,10 @@ SdlBlitter::PixelBuffer SdlBlitter::inBuffer() const {
+ 	PixelBuffer pb = { 0, 0, RGB32 };
+ 
+ 	if (SDL_Surface *s = surface_ ? surface_.get() : screen_surface_) {
+-		pb.pixels = static_cast<char *>(s->pixels);
++		Uint32 offset = (s->w/2 - width/2);
++		offset += (s->h/2 - height/2) * s->w;
++
++		pb.pixels = static_cast<char *>(s->pixels) + 4*offset;
+ 		pb.format = s->format->BitsPerPixel == 16 ? RGB16 : RGB32;
+ 		pb.pitch = s->pitch / s->format->BytesPerPixel;
+ 	}
+diff --git a/gambatte_sdl/src/sdlblitter.h b/gambatte_sdl/src/sdlblitter.h
+index 754654eb..18237214 100644
+--- a/gambatte_sdl/src/sdlblitter.h
++++ b/gambatte_sdl/src/sdlblitter.h
+@@ -47,6 +47,8 @@ public:
+ private:
+ 	struct SurfaceDeleter;
+ 
++	unsigned int width;
++	unsigned int height;
+ 	SDL_Window *screen_;
+ 	SDL_Surface *screen_surface_;
+ 	scoped_ptr<SDL_Surface, SurfaceDeleter> const surface_;
