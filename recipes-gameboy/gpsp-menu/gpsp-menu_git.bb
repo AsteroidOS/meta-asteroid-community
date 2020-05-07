@@ -13,8 +13,8 @@ inherit qmake5
 FILES_${PN} += "/usr/share/icons/asteroid/"
 FILES_${PN} += "/usr/share/translations/"
 
-DEPENDS += "qml-asteroid qttools-native qtdeclarative-native"
-RDEPENDS_${PN} += "qtsensors qtsensors-qmlplugins qtsensors-plugins gpsp"
+DEPENDS += "qml-asteroid libsdl2 qttools-native qtdeclarative-native"
+RDEPENDS_${PN} += "qtsensors libsdl2 qtsensors-qmlplugins qtsensors-plugins gpsp"
 
 do_install_append() {
     install -d ${D}/usr/share/icons/asteroid/
