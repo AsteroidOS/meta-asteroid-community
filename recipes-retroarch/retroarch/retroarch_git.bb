@@ -15,8 +15,7 @@ LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/GPL-3.0;md5=c79ff39f19dfec6d293
 
 PR ?= "r105"
 S = "${WORKDIR}/git"
-
-SRC_URI = "gitsm://github.com/libretro/RetroArch.git \
+SRC_URI = "git://github.com/libretro/RetroArch.git;protocol=https \
    file://0001-Revert-Wayland-Remove-deprecated-wl_shell-interface.patch \
    file://0002-wayland-egllib.patch \
 "
