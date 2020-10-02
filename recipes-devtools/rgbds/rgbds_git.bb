@@ -1,7 +1,7 @@
 SUMMARY = "gpsp GBA emulator"
 HOMEPAGE = "https://github.com/MagneFire/gpsp"
 LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://LICENSE;md5=a2a25a073c835eb33b16475c81802ed5"
+LIC_FILES_CHKSUM = "file://LICENSE;md5=80084fe85efbf5d63cf2541801d78dfa"
 
 SRC_URI = "git://github.com/rednex/rgbds.git;protocol=https \
 "
