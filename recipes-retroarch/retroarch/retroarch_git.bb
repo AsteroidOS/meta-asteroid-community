@@ -13,13 +13,17 @@ BUGTRACKER = "https://github.com/libretro/RetroArch/issues"
 LICENSE = "GPLv3"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/GPL-3.0;md5=c79ff39f19dfec6d293b95dea7b07891"
 
-PR ?= "r105"
+PR = "r1"
+PV = "+git${SRCPV}"
 S = "${WORKDIR}/git"
 SRC_URI = "git://github.com/libretro/RetroArch.git;protocol=https \
-   file://0001-Revert-Wayland-Remove-deprecated-wl_shell-interface.patch \
-   file://0002-wayland-egllib.patch \
+  file://0001-wayland-egllib.patch \
+  file://0002-Wayland-Make-sure-that-the-EGL-backend-never-resizes.patch \
 "
-SRCREV = "${AUTOREV}"
+# Retroarch 1.9.0
+SRCREV = "5e551dd92b79d8127e66939835ea3c2a140c4078"
+
+FILES_${PN} += "/usr/share/metainfo/"
 
 inherit autotools-brokensep pkgconfig
 
@@ -34,12 +38,12 @@ RETROARCH_DEFAULT_INPUT_DRIVER ??= "udev"
 RETROARCH_DEFAULT_JOYPAD_DRIVER ??= "udev"
 
 # Video driver to use. "gl", "xvideo", "sdl", "d3d"
-RETROARCH_DEFAULT_VIDEO_DRIVER ??= "sdl2"
+RETROARCH_DEFAULT_VIDEO_DRIVER ??= "gl"
 
 # Which context implementation to use.
 # Possible ones for desktop are: glx, x-egl, kms-egl, sdl-gl, wgl.
 # By default, tries to use first suitable driver.
-RETROARCH_DEFAULT_VIDEO_CONTEXT ??= "sdl-gl"
+RETROARCH_DEFAULT_VIDEO_CONTEXT ??= "wayland"
 
 # Audio driver backend. Depending on configuration possible candidates are: alsa, pulse, oss, jack, rsound, roar, openal, sdl, xaudio.
 RETROARCH_DEFAULT_AUDIO_DRIVER ??= "pulse"
@@ -52,7 +56,6 @@ RETROARCH_DEFAULT_RESAMPLER_DRIVER ??= "sinc"
 RETROARCH_DEFAULT_MENU_DRIVER ??= "xmb"
 
 # Package config
-
 PACKAGECONFIG ??= " \
   ${@bb.utils.contains('TUNE_FEATURES', 'neon', 'neon', '', d)} \
   ${@bb.utils.contains('DISTRO_FEATURES', 'wayland', 'wayland', '', d)} \
@@ -71,7 +74,6 @@ PACKAGECONFIG ??= " \
   udev \
   zlib \
   sdl2 \
-  no-glsl \
 "
 
 # Switches updated from ea49348db2917b893f298d755a2dd8e82fb4436a

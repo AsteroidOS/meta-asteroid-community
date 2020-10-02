@@ -1,0 +1,26 @@
+From 6086b20ea7bc76096d03905999f1105fa347cbff Mon Sep 17 00:00:00 2001
+From: MagneFire <IDaNLContact@gmail.com>
+Date: Thu, 1 Oct 2020 23:12:27 +0200
+Subject: [PATCH] (Wayland) Make sure that the EGL backend never resizes to
+ 0x0.
+
+---
+ gfx/drivers_context/wayland_ctx.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/gfx/drivers_context/wayland_ctx.c b/gfx/drivers_context/wayland_ctx.c
+index 2b66963820..b45224ae2d 100644
+--- a/gfx/drivers_context/wayland_ctx.c
++++ b/gfx/drivers_context/wayland_ctx.c
+@@ -100,7 +100,7 @@ static void handle_toplevel_config_common(void *data,
+ 
+ #ifdef HAVE_EGL
+    if (wl->win)
+-      wl_egl_window_resize(wl->win, width, height, 0, 0);
++      wl_egl_window_resize(wl->win, wl->width, wl->height, 0, 0);
+    else
+       wl->win = wl_egl_window_create(wl->surface,
+             wl->width * wl->buffer_scale,
+-- 
+2.28.0
+
