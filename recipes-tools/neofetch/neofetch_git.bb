@@ -1,7 +1,7 @@
 SUMMARY = "A CLI system information tool written in BASH."
 HOMEPAGE = "https://github.com/jrtberlin/neofetch"
 LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://LICENSE;md5=80084fe85efbf5d63cf2541801d78dfa"
+LIC_FILES_CHKSUM = "file://LICENSE.md;md5=d300b86297c170b6498705fbb6794e3f"
 
 SRC_URI = "git://github.com/jrtberlin/neofetch.git;protocol=https"
 
