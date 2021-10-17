@@ -10,13 +10,13 @@ PV = "+git${SRCPV}"
 S = "${WORKDIR}/git"
 inherit cmake_qt5
 
-FILES_${PN} += "/usr/share/icons/asteroid/"
-FILES_${PN} += "/usr/share/translations/"
+FILES:${PN} += "/usr/share/icons/asteroid/"
+FILES:${PN} += "/usr/share/translations/"
 
 DEPENDS += "qml-asteroid asteroid-generate-desktop-native libsdl2 qttools-native qtdeclarative-native"
-RDEPENDS_${PN} += "qtsensors libsdl2 qtsensors-qmlplugins qtsensors-plugins"
+RDEPENDS:${PN} += "qtsensors libsdl2 qtsensors-qmlplugins qtsensors-plugins"
 
-do_install_append() {
+do_install:append() {
     install -d ${D}/usr/share/icons/asteroid/
     cp ${S}/i18n/gameboy.svg ${D}/usr/share/icons/asteroid/
 }

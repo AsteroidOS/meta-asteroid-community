@@ -24,9 +24,9 @@ EXTRA_OECMAKE += " -DENABLE_GLES=on"
 
 TARGET_CC_ARCH += "${LDFLAGS}"
 
-FILES_${PN} += "/usr/share/ /usr/etc/vbam.cfg"
+FILES:${PN} += "/usr/share/ /usr/etc/vbam.cfg"
 
 EXTRA_OECONF = " --includedir=${STAGING_INCDIR} "
 
 DEPENDS += "libsdl2 zlib libpng libhybris android"
-RDEPENDS_${PN} += "libsdl2 zlib libpng libhybris"
+RDEPENDS:${PN} += "libsdl2 zlib libpng libhybris"

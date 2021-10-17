@@ -12,7 +12,7 @@ PR = "r1"
 PV = "+git${SRCPV}"
 S = "${WORKDIR}/git"
 
-INSANE_SKIP_${PN} += "already-stripped"
+INSANE_SKIP:${PN} += "already-stripped"
 
 inherit pkgconfig
 
@@ -39,4 +39,4 @@ do_install() {
 }
 
 DEPENDS += "libsdl2 zlib libhybris android"
-RDEPENDS_${PN} += "libsdl2 zlib libhybris"
+RDEPENDS:${PN} += "libsdl2 zlib libhybris"

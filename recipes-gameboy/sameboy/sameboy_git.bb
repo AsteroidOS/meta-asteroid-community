@@ -12,7 +12,7 @@ PV = "+git${SRCPV}"
 S = "${WORKDIR}/git"
 
 
-FILES_${PN} += "/usr/share/games/sameboy/"
+FILES:${PN} += "/usr/share/games/sameboy/"
 
 inherit pkgconfig
 
@@ -33,4 +33,4 @@ do_install() {
 }
 
 DEPENDS += "rgbds-native libpng-native libsdl2 zlib libhybris android"
-RDEPENDS_${PN} += "libsdl2 zlib libhybris"
+RDEPENDS:${PN} += "libsdl2 zlib libhybris"

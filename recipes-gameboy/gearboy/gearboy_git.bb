@@ -11,7 +11,7 @@ PR = "r1"
 PV = "+git${SRCPV}"
 S = "${WORKDIR}/git"
 
-FILES_${PN} += "/usr/lib/systemd/user/"
+FILES:${PN} += "/usr/lib/systemd/user/"
 
 inherit pkgconfig
 
@@ -33,4 +33,4 @@ do_install() {
 }
 
 DEPENDS += "libsdl2 zlib libhybris android libconfig"
-RDEPENDS_${PN} += "libsdl2 zlib libhybris libconfig"
+RDEPENDS:${PN} += "libsdl2 zlib libhybris libconfig"
