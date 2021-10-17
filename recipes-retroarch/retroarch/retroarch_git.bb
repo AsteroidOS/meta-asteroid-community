@@ -23,7 +23,7 @@ SRC_URI = "git://github.com/libretro/RetroArch.git;protocol=https \
 # Retroarch 1.9.0
 SRCREV = "5e551dd92b79d8127e66939835ea3c2a140c4078"
 
-FILES_${PN} += "/usr/share/metainfo/ /usr/share/icons/asteroid/"
+FILES:${PN} += "/usr/share/metainfo/ /usr/share/icons/asteroid/"
 
 inherit autotools-brokensep pkgconfig
 
@@ -234,7 +234,7 @@ do_configure() {
     ${S}/retroarch.desktop || exit 1
 }
 
-do_install_append() {
+do_install:append() {
   install -d ${D}/usr/share/icons/asteroid/
   install -m 644 ${S}/media/retroarch.svg ${D}/usr/share/icons/asteroid/
 }

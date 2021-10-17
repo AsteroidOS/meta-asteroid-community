@@ -38,4 +38,4 @@ do_install() {
 }
 
 DEPENDS += "libsdl2 zlib libhybris android libconfig"
-RDEPENDS_${PN} += "libsdl2 zlib libhybris libconfig"
+RDEPENDS:${PN} += "libsdl2 zlib libhybris libconfig"

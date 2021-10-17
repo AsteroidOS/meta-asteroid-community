@@ -13,7 +13,7 @@ PV = "+git${SRCPV}"
 S = "${WORKDIR}/git"
 
 
-FILES_${PN} += "/usr/share/gpsp/ /usr/lib/systemd/user/"
+FILES:${PN} += "/usr/share/gpsp/ /usr/lib/systemd/user/"
 
 inherit pkgconfig
 
@@ -31,7 +31,6 @@ do_install() {
     cp asteroidos/gpsp ${D}${bindir}
 
     install -d ${D}/usr/share/gpsp/
-    #chown ceres:ceres ${D}/usr/share/gpsp/
     cp game_config.txt ${D}/usr/share/gpsp/
     cp ../gpsp.conf ${D}/usr/share/gpsp/
 
@@ -40,4 +39,4 @@ do_install() {
 }
 
 DEPENDS += "libsdl2 zlib libhybris android"
-RDEPENDS_${PN} += "libsdl2 zlib libhybris"
+RDEPENDS:${PN} += "libsdl2 zlib libhybris"

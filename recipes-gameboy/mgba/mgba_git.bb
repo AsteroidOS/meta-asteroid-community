@@ -26,9 +26,9 @@ EXTRA_OECMAKE += " -DUSE_DEBUGGERS=off"
 
 TARGET_CC_ARCH += "${LDFLAGS}"
 
-FILES_${PN} += "/usr/share/icons"
+FILES:${PN} += "/usr/share/icons"
 
 EXTRA_OECONF = " --includedir=${STAGING_INCDIR} "
 
 DEPENDS += "libsdl2 zlib libpng libhybris android libconfig"
-RDEPENDS_${PN} += "libsdl2 zlib libpng libhybris libconfig"
+RDEPENDS:${PN} += "libsdl2 zlib libpng libhybris libconfig"
