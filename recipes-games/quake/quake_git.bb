@@ -4,7 +4,7 @@ HOMEPAGE = "https://github.com/MagneFire/lp-public"
 LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
 
-SRC_URI = "git://github.com/MagneFire/lp-public.git;protocol=https \
+SRC_URI = "git://github.com/MagneFire/lp-public.git;protocol=https;branch=master \
     file://quake.desktop \
 "
 SRCREV = "${AUTOREV}"

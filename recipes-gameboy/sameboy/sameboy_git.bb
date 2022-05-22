@@ -3,7 +3,7 @@ HOMEPAGE = "https://github.com/LIJI32/SameBoy"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=4118d8da21068e5aabfd211aa1ff75bb"
 
-SRC_URI = "git://github.com/LIJI32/SameBoy.git;protocol=https \
+SRC_URI = "git://github.com/LIJI32/SameBoy.git;protocol=https;branch=master \
     file://0001-compilation-runtime-fix.patch \
 "
 SRCREV = "bb37f8d2f0a7dbfa5814e2d9faa897b52fdfd230"

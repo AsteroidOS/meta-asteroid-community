@@ -4,7 +4,7 @@ HOMEPAGE = "https://github.com/mgba-emu/mgba.git"
 LICENSE = "MPL-1.0"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=815ca599c9df247a0c7f619bab123dad"
 
-SRC_URI = "git://github.com/mgba-emu/mgba.git;protocol=https \
+SRC_URI = "git://github.com/mgba-emu/mgba.git;protocol=https;branch=master \
 "
 SRCREV = "3e86eeda7004757be9926876224af026a07f7eca"
 

@@ -1,7 +1,7 @@
 SUMMARY = "unofficial watchface template for AsteroidOS."
 HOMEPAGE = "https://github.com/AsteroidOS/unofficial-watchfaces/"
 
-SRC_URI = "git://github.com/AsteroidOS/unofficial-watchfaces.git;protocol=https"
+SRC_URI = "git://github.com/AsteroidOS/unofficial-watchfaces.git;protocol=https;branch=master"
 
 SRCREV = "${AUTOREV}"
 PR = "r1"
