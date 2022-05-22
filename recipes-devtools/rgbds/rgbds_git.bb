@@ -38,7 +38,7 @@ INSANE_SKIP:${PN} = "already-stripped"
 
 
 DEPENDS += " bison-native libpng-native"
-RDEPENDS:${PN}:append:class-target += "libpng-native  libpng"
+RDEPENDS:${PN}:append:class-target = " libpng-native libpng"
 RDEPENDS:${PN} += " libpng-native libpng"
 
 BBCLASSEXTEND = "native nativesdk"
