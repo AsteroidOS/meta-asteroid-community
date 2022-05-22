@@ -3,7 +3,7 @@ HOMEPAGE = "https://github.com/MagneFire/gpsp"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=80084fe85efbf5d63cf2541801d78dfa"
 
-SRC_URI = "git://github.com/rednex/rgbds.git;protocol=https \
+SRC_URI = "git://github.com/rednex/rgbds.git;protocol=https;branch=master \
 "
 SRCREV = "${AUTOREV}"
 PR = "r1"

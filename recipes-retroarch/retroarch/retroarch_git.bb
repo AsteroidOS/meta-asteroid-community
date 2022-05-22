@@ -16,7 +16,7 @@ LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/GPL-3.0-only;md5=c79ff39f19dfec
 PR = "r1"
 PV = "+git${SRCPV}"
 S = "${WORKDIR}/git"
-SRC_URI = "git://github.com/libretro/RetroArch.git;protocol=https \
+SRC_URI = "git://github.com/libretro/RetroArch.git;protocol=https;branch=master \
   file://0001-wayland-egllib.patch \
   file://0002-Wayland-Make-sure-that-the-EGL-backend-never-resizes.patch \
 "

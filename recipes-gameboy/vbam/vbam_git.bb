@@ -4,7 +4,7 @@ HOMEPAGE = "https://github.com/MagneFire/visualboyadvance-m"
 LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://doc/License.txt;md5=ad8ac3e11cc39f83fcaa6cd492075985"
 
-SRC_URI = "git://github.com/MagneFire/visualboyadvance-m.git;protocol=https"
+SRC_URI = "git://github.com/MagneFire/visualboyadvance-m.git;protocol=https;branch=master"
 SRCREV = "${AUTOREV}"
 PR = "r1"
 PV = "+git${SRCPV}"

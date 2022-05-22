@@ -3,7 +3,7 @@ HOMEPAGE = "https://github.com/sinamas/gambatte"
 LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://COPYING;md5=751419260aa954499f7abaabaa882bbe"
 
-SRC_URI = "git://github.com/sinamas/gambatte.git;protocol=https \
+SRC_URI = "git://github.com/sinamas/gambatte.git;protocol=https;branch=master \
     file://0001-yocto-paths-fix.patch \
     file://0002-sdl-to-sdl2.patch \
     file://0003-rtc-fix.patch \
