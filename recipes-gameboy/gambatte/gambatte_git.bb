@@ -1,6 +1,6 @@
 SUMMARY = "Gambatte GB/GBC emulator"
 HOMEPAGE = "https://github.com/sinamas/gambatte"
-LICENSE = "GPLv2"
+LICENSE = "GPL-2.0-only"
 LIC_FILES_CHKSUM = "file://COPYING;md5=751419260aa954499f7abaabaa882bbe"
 
 SRC_URI = "git://github.com/sinamas/gambatte.git;protocol=https;branch=master \

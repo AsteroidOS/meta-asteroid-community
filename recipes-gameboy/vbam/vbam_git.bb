@@ -1,7 +1,7 @@
 SUMMARY = "Visual Boy Advance GB/GBC/GBA emulator"
 HOMEPAGE = "https://github.com/MagneFire/visualboyadvance-m"
 
-LICENSE = "GPLv2"
+LICENSE = "GPL-2.0-only"
 LIC_FILES_CHKSUM = "file://doc/License.txt;md5=ad8ac3e11cc39f83fcaa6cd492075985"
 
 SRC_URI = "git://github.com/MagneFire/visualboyadvance-m.git;protocol=https;branch=master"

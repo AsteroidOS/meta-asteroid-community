@@ -1,6 +1,6 @@
 SUMMARY = "unofficial watchface common files for AsteroidOS."
 HOMEPAGE = "https://github.com/AsteroidOS/unofficial-watchfaces/"
-LICENSE = "GPLv2+"
+LICENSE = "GPL-2.0-or-later"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/GPL-2.0-or-later;md5=fed54355545ffd980b814dab4a3b312c"
 
 SRC_URI = "git://github.com/AsteroidOS/unofficial-watchfaces.git;protocol=https;branch=master"
