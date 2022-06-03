@@ -3,15 +3,18 @@ HOMEPAGE = "https://github.com/MagneFire/gpsp-menu.git"
 LICENSE = "GPL-3.0-only"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=84dcc94da3adb52b53ae4fa38fe49e5d"
 
-SRC_URI = "git://github.com/MagneFire/gpsp-menu.git;protocol=https;branch=master"
-SRCREV = "737a1875a01c3d79113e01035345ef5616a14c11"
+SRC_URI = "git://github.com/MagneFire/gpsp-menu.git;protocol=https;branch=master \
+    file://gpsp.conf"
+SRCREV = "67573b7551883d959ea543bb652dfbf33e883c46"
 PR = "r1"
 PV = "+git${SRCPV}"
 S = "${WORKDIR}/git"
-inherit cmake_qt5
+inherit cmake_qt5 pkgconfig
 
 FILES:${PN} += "/usr/share/icons/asteroid/"
 FILES:${PN} += "/usr/share/translations/"
+FILES:${PN} += "/usr/lib/systemd/user/"
+FILES:${PN} += "/usr/share/gpsp/"
 
 DEPENDS += "qml-asteroid asteroid-generate-desktop-native libsdl2 qttools-native qtdeclarative-native"
 RDEPENDS:${PN} += "qtsensors libsdl2 qtsensors-qmlplugins qtsensors-plugins"
@@ -19,4 +22,7 @@ RDEPENDS:${PN} += "qtsensors libsdl2 qtsensors-qmlplugins qtsensors-plugins"
 do_install:append() {
     install -d ${D}/usr/share/icons/asteroid/
     cp ${S}/i18n/gameboy.svg ${D}/usr/share/icons/asteroid/
+
+    install -d ${D}/usr/share/gpsp/
+    cp ../gpsp.conf ${D}/usr/share/gpsp/
 }
