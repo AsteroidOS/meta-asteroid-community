@@ -3,17 +3,14 @@ HOMEPAGE = "https://github.com/MagneFire/gpsp"
 LICENSE = "GPL-2.0-only"
 LIC_FILES_CHKSUM = "file://COPYING.DOC;md5=892f569a555ba9c07a568a7c0c4fa63a"
 
-SRC_URI = "git://github.com/MagneFire/gpsp.git;protocol=https;branch=master \
-    file://gpsp.conf \
-    file://gpsp.service \
-"
-SRCREV = "${AUTOREV}"
+SRC_URI = "git://github.com/MagneFire/gpsp.git;protocol=https;branch=master"
+SRCREV = "408d3748dbfe16122e6cfaa21899f828c7cad5e2"
 PR = "r1"
 PV = "+git${SRCPV}"
 S = "${WORKDIR}/git"
 
 
-FILES:${PN} += "/usr/share/gpsp/ /usr/lib/systemd/user/"
+FILES:${PN} += "/usr/share/gpsp/"
 
 inherit pkgconfig
 
@@ -32,11 +29,7 @@ do_install() {
 
     install -d ${D}/usr/share/gpsp/
     cp game_config.txt ${D}/usr/share/gpsp/
-    cp ../gpsp.conf ${D}/usr/share/gpsp/
-
-    install -d ${D}/usr/lib/systemd/user/
-    cp ../gpsp.service ${D}/usr/lib/systemd/user/
 }
 
-DEPENDS += "libsdl2 zlib libhybris android"
-RDEPENDS:${PN} += "libsdl2 zlib libhybris"
+DEPENDS += "libsdl2"
+RDEPENDS:${PN} += "libsdl2"
