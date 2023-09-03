@@ -6,7 +6,7 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=84dcc94da3adb52b53ae4fa38fe49e5d"
 SRC_URI = "git://github.com/MagneFire/gpsp-menu.git;protocol=https;branch=master \
            file://gpsp.conf \
            "
-SRCREV = "befd3e9e23673107f45cde6f60daac9de7eaf3ab"
+SRCREV = "63709f167488c4b563bbb5a37d48c9028dd1d4d6"
 PV = "+git${SRCPV}"
 S = "${WORKDIR}/git"
 inherit cmake_qt5 pkgconfig
