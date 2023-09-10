@@ -6,9 +6,12 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=84dcc94da3adb52b53ae4fa38fe49e5d"
 SRC_URI = "git://github.com/MagneFire/gpsp-menu.git;protocol=https;branch=master \
            file://gpsp.conf \
            "
-SRCREV = "63709f167488c4b563bbb5a37d48c9028dd1d4d6"
+SRCREV = "2bddcaabefe2530b236951827553347b8c743835"
 PV = "+git${SRCPV}"
 S = "${WORKDIR}/git"
+
+UPSTREAM_CHECK_COMMITS = "1"
+
 inherit cmake_qt5 pkgconfig
 
 FILES:${PN} += "/usr/share/icons/asteroid/"
