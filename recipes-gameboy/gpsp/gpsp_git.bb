@@ -4,12 +4,13 @@ LICENSE = "GPL-2.0-only"
 LIC_FILES_CHKSUM = "file://COPYING.DOC;md5=892f569a555ba9c07a568a7c0c4fa63a"
 
 SRC_URI = "git://github.com/MagneFire/gpsp.git;protocol=https;branch=master"
-SRCREV = "322fca7e7aeeceb95658c3daeeecf8d958fb3cbb"
+SRCREV = "6ed8f36e1009f5dbf645265d9fe5825259226737"
 PV = "+git${SRCPV}"
 S = "${WORKDIR}/git"
 
-
 FILES:${PN} += "/usr/share/gpsp/"
+
+UPSTREAM_CHECK_COMMITS = "1"
 
 inherit pkgconfig
 
@@ -30,5 +31,5 @@ do_install() {
     cp game_config.txt ${D}/usr/share/gpsp/
 }
 
-DEPENDS += "libsdl2"
+DEPENDS += "libsdl2 mcedevel dbus"
 RDEPENDS:${PN} += "libsdl2"
