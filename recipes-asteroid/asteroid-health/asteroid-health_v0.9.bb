@@ -12,5 +12,5 @@ inherit cmake_qt5 pkgconfig
 
 DEPENDS += "qml-asteroid asteroid-generate-desktop-native qttools qtsensors asteroid-sensorlogd"
 FILES:${PN} += "/usr/lib/"
-RDEPENDS:${PN} += ""
+RDEPENDS:${PN} += "asteroid-sensorlogd"
 
