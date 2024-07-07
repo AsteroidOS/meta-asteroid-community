@@ -4,7 +4,7 @@ LICENSE = "GPL-2.0-only"
 LIC_FILES_CHKSUM = "file://COPYING.DOC;md5=892f569a555ba9c07a568a7c0c4fa63a"
 
 SRC_URI = "git://github.com/MagneFire/gpsp.git;protocol=https;branch=master"
-SRCREV = "c387966e366b40350d9899260c8086e0fd3aa686"
+SRCREV = "cc286647af745543d0583ac9398b32427a581ef4"
 PV = "+git${SRCPV}"
 S = "${WORKDIR}/git"
 
