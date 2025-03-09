@@ -4,7 +4,7 @@ LICENSE = "GPL-3.0-only"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=84dcc94da3adb52b53ae4fa38fe49e5d"
 
 SRC_URI = "git://github.com/eLtMosen/asteroid-dodger.git;protocol=https;branch=master"
-SRCREV = "8ceb9b703ec2f980d9c66f92c1645442e2d7edc8"
+SRCREV = "250035ae36feca9fa43d56fe6f6fde1fa037c2e7"
 PR = "r1"
 PV = "+git${SRCPV}"
 S = "${WORKDIR}/git"
