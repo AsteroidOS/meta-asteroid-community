@@ -4,6 +4,7 @@ Date: Thu, 1 Oct 2020 23:12:27 +0200
 Subject: [PATCH] (Wayland) Make sure that the EGL backend never resizes to
  0x0.
 
+Upstream-Status: Inappropriate
 ---
  gfx/drivers_context/wayland_ctx.c | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
