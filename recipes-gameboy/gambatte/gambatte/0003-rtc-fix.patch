@@ -1,4 +1,5 @@
 This patch is constructed from code located here: https://github.com/sinamas/gambatte/pull/18
+Upstream-Status: Inappropriate
 diff --git a/libgambatte/src/mem/memptrs.cpp b/libgambatte/src/mem/memptrs.cpp
 index 03d1dec9..05cf8250 100644
 --- a/libgambatte/src/mem/memptrs.cpp

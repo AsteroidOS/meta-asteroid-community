@@ -1,3 +1,5 @@
+Upstream-Status: Inappropriate
+
 diff --git a/qb/config.libs.sh b/qb/config.libs.sh
 index a5a8d7d677..1f07b80945 100644
 --- a/qb/config.libs.sh

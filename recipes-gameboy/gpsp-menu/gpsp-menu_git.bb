@@ -27,5 +27,5 @@ do_install:append() {
     cp ${S}/i18n/gameboy.svg ${D}/usr/share/icons/asteroid/
 
     install -d ${D}/usr/share/gpsp/
-    cp ../gpsp.conf ${D}/usr/share/gpsp/
+    install -m 0644 ${UNPACKDIR}/gpsp.conf ${D}/usr/share/gpsp/
 }

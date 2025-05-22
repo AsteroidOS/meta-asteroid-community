@@ -25,10 +25,10 @@ do_compile() {
 
 do_install() {
     install -d ${D}${bindir}
-    cp asteroidos/gpsp ${D}${bindir}
+    install -m 0777 asteroidos/gpsp ${D}${bindir}
 
     install -d ${D}/usr/share/gpsp/
-    cp game_config.txt ${D}/usr/share/gpsp/
+    install -m 0644 ${S}/game_config.txt ${D}/usr/share/gpsp/
 }
 
 DEPENDS += "libsdl2 mcedevel dbus"

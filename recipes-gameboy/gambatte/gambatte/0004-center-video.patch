@@ -1,3 +1,4 @@
+Upstream-Status: Inappropriate
 diff --git a/gambatte_sdl/src/sdlblitter.cpp b/gambatte_sdl/src/sdlblitter.cpp
 index c98a2329..66953403 100644
 --- a/gambatte_sdl/src/sdlblitter.cpp

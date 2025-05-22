@@ -1,4 +1,5 @@
 This patch is constructed from code located here: https://github.com/Drako/gambatte/commit/160e2d3db9358cc11946a1739d6962d9d1055a3f
+Upstream-Status: Inappropriate
 diff --git a/gambatte_sdl/src/blitterwrapper.cpp b/gambatte_sdl/src/blitterwrapper.cpp
 index bb429441..219ef7bb 100755
 --- a/gambatte_sdl/src/blitterwrapper.cpp
