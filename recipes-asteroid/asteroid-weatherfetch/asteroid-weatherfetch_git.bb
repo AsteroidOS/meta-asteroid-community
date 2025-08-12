@@ -4,7 +4,7 @@ LICENSE = "GPL-3.0-only"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=84dcc94da3adb52b53ae4fa38fe49e5d"
 
 SRC_URI = "git://github.com/beroset/asteroid-weatherfetch.git;protocol=https;branch=master"
-SRCREV = "afdc9fd9bcd461bd683baf48e61796864edcdf0a"
+SRCREV = "8c479fa2bb7e29986c43060cd0104e2d3baaffe9"
 PV = "2.0.0"
 S = "${WORKDIR}/git"
 
