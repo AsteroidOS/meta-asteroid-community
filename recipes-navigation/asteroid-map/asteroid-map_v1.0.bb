@@ -1,5 +1,5 @@
 SUMMARY = "Map app for AsteroidOS"
-iHOMEPAGE = "https://git.dodorad.io/dodoradio/asteroid-map/about"
+HOMEPAGE = "https://git.dodorad.io/dodoradio/asteroid-map/about"
 LICENSE = "GPL-3.0-only"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=84dcc94da3adb52b53ae4fa38fe49e5d"
 
@@ -11,7 +11,7 @@ S = "${WORKDIR}/git"
 inherit cmake_qt5
 
 DEPENDS += "qml-asteroid asteroid-generate-desktop-native qttools-native qtdeclarative-native qtlocation"
-RDEPENDS:${PN} += "qtlocation"
+RDEPENDS:${PN} += "qtlocation qtlocation-plugins qtlocation-qmlplugins"
 
 FILES:${PN} += "/usr/share/icons/asteroid"
 
