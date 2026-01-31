@@ -6,7 +6,7 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=d32239bcb673463ab874e80d47fae504"
 SRC_URI = "git://github.com/MagneFire/Gearboy.git;protocol=https;branch=master \
     file://gearboy.service \
 "
-SRCREV = "${AUTOREV}"
+SRCREV = "c6daf2fb6d3327ec0f399ef6e4b0a59d87c45c1c"
 PR = "r1"
 PV = "+git${SRCPV}"
 S = "${WORKDIR}/git"
