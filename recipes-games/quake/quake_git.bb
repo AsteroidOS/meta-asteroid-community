@@ -7,7 +7,7 @@ LIC_FILES_CHKSUM = ""
 SRC_URI = "git://github.com/MagneFire/lp-public.git;protocol=https;branch=master \
     file://quake.desktop \
 "
-SRCREV = "${AUTOREV}"
+SRCREV = "5a4e358e58e5d01ef17c37b8e55ea5890c86bfd1"
 PR = "r1"
 PV = "+git${SRCPV}"
 S = "${WORKDIR}/git"
