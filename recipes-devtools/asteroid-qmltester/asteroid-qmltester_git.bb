@@ -4,7 +4,7 @@ LICENSE = "GPL-3.0-only"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=84dcc94da3adb52b53ae4fa38fe49e5d"
 
 SRC_URI = "git://github.com/MagneFire/asteroid-qmltester.git;protocol=https;branch=master"
-SRCREV = "de2672f6da72699112839e2151ef6a3ac83f52c6"
+SRCREV = "9b1b93d3d140ecbc2b6f898dabd5906849b2b03b"
 PR = "r1"
 PV = "+git${SRCPV}"
 S = "${WORKDIR}/git"
