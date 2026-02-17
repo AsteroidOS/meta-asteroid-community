@@ -10,7 +10,7 @@ PV = "0.9+git${SRCPV}"
 S = "${WORKDIR}/git"
 inherit cmake_qt5 pkgconfig
 
-DEPENDS += "qml-asteroid asteroid-generate-desktop-native qttools qtsensors asteroid-sensorlogd"
+DEPENDS += "qml-asteroid asteroid-generate-desktop-native qttools qtsensors asteroid-sensorlogd qttools-native qtdeclarative-native"
 FILES:${PN} += "/usr/lib/"
 RDEPENDS:${PN} += "asteroid-sensorlogd"
 
