@@ -4,7 +4,7 @@ LICENSE = "GPL-3.0-only"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=84dcc94da3adb52b53ae4fa38fe49e5d"
 
 SRC_URI = "git://github.com/moWerk/asteroid-shopper.git;protocol=https;branch=master"
-SRCREV = "aaa45f72ca7cf21d15cbbdbdae2121047923bf2e"
+SRCREV = "4e869ad9b662f7452825351a2a7740eb459c46c6"
 PR = "r1"
 PV = "+git${SRCPV}"
 S = "${WORKDIR}/git"
@@ -15,7 +15,7 @@ DEPENDS += "qml-asteroid asteroid-generate-desktop-native qttools-native qtdecla
 
 do_install:append() {
     install -g ${CERES_GID} -o ${CERES_UID} -d ${D}/home/ceres
-    install -g ${CERES_GID} -o ${CERES_UID} -m 0644 ${S}/src/shopper.txt ${D}/home/ceres
+    install -g ${CERES_GID} -o ${CERES_UID} -m 0644 ${S}/src/default-shopper.txt ${D}/home/ceres
 }
 
-FILES:${PN} += "/usr/share/translations/ /home/ceres/shopper.txt"
+FILES:${PN} += "/usr/share/translations/ /home/ceres/default-shopper.txt"
