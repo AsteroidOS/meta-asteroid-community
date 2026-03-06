@@ -4,7 +4,7 @@ LICENSE = "GPL-3.0-only"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=84dcc94da3adb52b53ae4fa38fe49e5d"
 
 SRC_URI = "git://github.com/moWerk/asteroid-shopper.git;protocol=https;branch=master"
-SRCREV = "4e869ad9b662f7452825351a2a7740eb459c46c6"
+SRCREV = "3afbc5121a91d0aab2b0d6dceb90f20ff31fbabf"
 PR = "r1"
 PV = "+git${SRCPV}"
 S = "${WORKDIR}/git"
