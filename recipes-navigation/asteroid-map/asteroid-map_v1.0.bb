@@ -7,7 +7,6 @@ SRC_URI = "git://github.com/AsteroidOS/asteroid-map.git;protocol=https;branch=ma
 SRCREV = "0e7507f8e04d046a8cde96f914b8863c441e7be2"
 PR = "r1"
 PV = "+git${SRCPV}"
-S = "${WORKDIR}/git"
 inherit cmake_qt5
 
 DEPENDS += "qml-asteroid asteroid-generate-desktop-native qttools-native qtdeclarative-native qtlocation"
