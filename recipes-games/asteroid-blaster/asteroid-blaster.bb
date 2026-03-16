@@ -7,7 +7,6 @@ SRC_URI = "git://github.com/moWerk/asteroid-blaster.git;protocol=https;branch=ma
 SRCREV = "2c9b9b322e12b8a5d9d57c782cb1972920337734"
 PR = "r1"
 PV = "+git${SRCPV}"
-S = "${WORKDIR}/git"
 
 inherit cmake_qt5 pkgconfig
 
