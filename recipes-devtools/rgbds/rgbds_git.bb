@@ -7,7 +7,6 @@ SRC_URI = "git://github.com/rednex/rgbds.git;protocol=https;branch=master"
 SRCREV = "9d993d84e85eeb8dd304e48463d89865795e97ed"
 PR = "r1"
 PV = "+git${SRCPV}"
-S = "${WORKDIR}/git"
 
 inherit pkgconfig
 
@@ -36,7 +35,7 @@ do_install() {
 INSANE_SKIP:${PN} = "already-stripped"
 
 
-DEPENDS += " bison-native libpng-native"
+DEPENDS += " bison-native libpng-native libpng"
 RDEPENDS:${PN}:append:class-target = " libpng-native libpng"
 RDEPENDS:${PN} += " libpng-native libpng"
 
