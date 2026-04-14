@@ -4,7 +4,7 @@ LICENSE = "GPL-3.0-only"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=84dcc94da3adb52b53ae4fa38fe49e5d"
 
 SRC_URI = "git://github.com/AsteroidOS/asteroid-map.git;protocol=https;branch=master"
-SRCREV = "0e7507f8e04d046a8cde96f914b8863c441e7be2"
+SRCREV = "56a456a967b8658bcc836ed2484564e3697ee1de"
 PR = "r1"
 PV = "+git${SRCPV}"
 S = "${WORKDIR}/git"
