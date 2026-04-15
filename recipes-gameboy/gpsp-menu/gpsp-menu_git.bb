@@ -6,7 +6,7 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=84dcc94da3adb52b53ae4fa38fe49e5d"
 SRC_URI = "git://github.com/MagneFire/gpsp-menu.git;protocol=https;branch=main \
            file://gpsp.conf \
            "
-SRCREV = "fe997a620a3560ddf872c70d732502ff25bea352"
+SRCREV = "d1b5959d9812e4766faf8dabcc82ddda8e6d3632"
 PV = "+git${SRCPV}"
 S = "${WORKDIR}/git"
 
