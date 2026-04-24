@@ -9,7 +9,7 @@ PR = "r1"
 PV = "+git${SRCPV}"
 S = "${WORKDIR}/git"
 
-inherit cmake_qt5 pkgconfig
+inherit qt6-cmake pkgconfig
 
 DEPENDS:append = " nemo-keepalive qml-asteroid qtsensors qttools-native qtdeclarative-native"
 

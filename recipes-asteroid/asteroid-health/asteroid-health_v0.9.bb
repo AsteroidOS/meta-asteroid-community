@@ -8,7 +8,7 @@ SRCREV = "c5aea9086f7f25d2f3ebca5041da69a64d41eb68"
 PR = "r1"
 PV = "0.9+git${SRCPV}"
 S = "${WORKDIR}/git"
-inherit cmake_qt5 pkgconfig
+inherit qt6-cmake pkgconfig
 
 DEPENDS += "qml-asteroid asteroid-generate-desktop-native qttools qtsensors asteroid-sensorlogd qttools-native qtdeclarative-native"
 FILES:${PN} += "/usr/lib/ /usr/share/translations/"

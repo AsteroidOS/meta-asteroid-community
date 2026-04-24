@@ -12,7 +12,7 @@ S = "${WORKDIR}/git"
 
 UPSTREAM_CHECK_COMMITS = "1"
 
-inherit cmake_qt5 pkgconfig
+inherit qt6-cmake pkgconfig
 
 FILES:${PN} += "/usr/share/icons/asteroid/"
 FILES:${PN} += "/usr/share/translations/"

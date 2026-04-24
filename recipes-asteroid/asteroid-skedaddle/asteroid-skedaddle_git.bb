@@ -10,7 +10,7 @@ SRCREV = "c84e5115a2f8b2a7ceb515472fce851e8cd8a968"
 
 S = "${WORKDIR}/git"
 
-inherit cmake_qt5
+inherit qt6-cmake
 
 DEPENDS += "qml-asteroid asteroid-generate-desktop-native qttools-native qtdeclarative-native qtlocation espeak"
 RDEPENDS:${PN} += "espeak qtlocation-qmlplugins"

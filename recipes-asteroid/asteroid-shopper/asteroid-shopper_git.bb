@@ -9,7 +9,7 @@ PR = "r2"
 PV = "+git${SRCPV}"
 S = "${WORKDIR}/git"
 
-inherit cmake_qt5 pkgconfig asteroid-users
+inherit qt6-cmake pkgconfig asteroid-users
 
 DEPENDS += "qml-asteroid asteroid-generate-desktop-native qttools-native qtdeclarative-native"
 
