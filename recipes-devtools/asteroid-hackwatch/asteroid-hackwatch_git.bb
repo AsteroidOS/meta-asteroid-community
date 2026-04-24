@@ -11,7 +11,7 @@ SRCREV = "b2af485c78e26e18e950e3e064584b0765c163e5"
 S = "${WORKDIR}/git"
 
 EXTRA_OECMAKE += "-DCPACK_PACKAGE_CONTACT='snoarsec@gmail.com'"
-inherit cmake_qt5
+inherit qt6-cmake
 
 DEPENDS = "qml-asteroid qtbase qtdeclarative extra-cmake-modules asteroid-generate-desktop-native"
 RDEPENDS:${PN} = "qtbase qtdeclarative asteroid-launcher sudo"
