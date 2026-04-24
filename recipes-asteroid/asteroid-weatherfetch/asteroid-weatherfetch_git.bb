@@ -8,7 +8,7 @@ SRCREV = "8c479fa2bb7e29986c43060cd0104e2d3baaffe9"
 PV = "2.0.0"
 S = "${WORKDIR}/git"
 
-inherit cmake_qt5 pkgconfig
+inherit qt6-cmake pkgconfig
 
 DEPENDS += "qml-asteroid asteroid-generate-desktop-native qttools-native qtdeclarative-native glibmm"
 RDEPENDS:${PN} += "nemo-qml-plugin-notifications asteroid-virtualkeyboard"

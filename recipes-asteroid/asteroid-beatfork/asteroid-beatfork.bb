@@ -7,7 +7,7 @@ SRCREV = "3165fca021a78a2f63abdb5e6bf9cf754c384fb0"
 PR = "r1"
 PV = "1.0+git${SRCPV}"
 S = "${WORKDIR}/git"
-inherit cmake_qt5 pkgconfig
+inherit qt6-cmake pkgconfig
 DEPENDS += "nemo-keepalive qml-asteroid asteroid-generate-desktop-native qttools-native qtdeclarative-native"
 do_install:append() {
     install -d ${D}/usr/share/sounds

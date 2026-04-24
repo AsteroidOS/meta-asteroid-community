@@ -9,7 +9,7 @@ PR = "r1"
 PV = "+git${SRCPV}"
 S = "${WORKDIR}/git"
 
-inherit cmake_qt5 pkgconfig
+inherit qt6-cmake pkgconfig
 
 DEPENDS += "nemo-qml-plugin-configuration qml-asteroid asteroid-generate-desktop-native qttools-native qtdeclarative-native"
 FILES:${PN} += "/usr/share/translations/"
