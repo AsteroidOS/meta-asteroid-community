@@ -18,4 +18,6 @@ do_install:append() {
     install -g ${CERES_GID} -o ${CERES_UID} -m 0644 ${S}/src/default-shopper.txt ${D}/home/ceres
 }
 
-FILES:${PN} += "/usr/share/translations/ /home/ceres/default-shopper.txt"
+FILES:${PN}:append = " ${libdir}"
+FILES:${PN}:append = " /usr/share/translations/"
+FILES:${PN}:append = " /home/ceres/default-shopper.txt"
