@@ -13,5 +13,6 @@ inherit cmake_qt5 pkgconfig
 
 DEPENDS:append = " qml-asteroid qttools-native qtdeclarative-native"
 
+FILES:${PN}:append = " ${libdir}"
 FILES:${PN}:append = " /usr/share/translations/"
 FILES:${PN}:append = " /usr/share/icons/asteroid/asteroid-touchdown.svg"
