@@ -18,6 +18,6 @@ do_install:append() {
     install -m 0644 ${S}/custom.txt ${D}/home/ceres/.local/share/asteroid-heliograph/custom.txt
 }
 
-FILES:${PN}:append = " /usr/lib/asteroid-heliograph.so"
+FILES:${PN}:append = " ${libdir}"
 FILES:${PN}:append = " /usr/share/translations/"
 FILES:${PN}:append = " /home/ceres/.local/share/asteroid-heliograph/custom.txt"
