@@ -13,4 +13,5 @@ inherit cmake_qt5 pkgconfig
 
 DEPENDS += "nemo-keepalive qml-asteroid qttools-native qtdeclarative-native"
 
+FILES:${PN}:append = " ${libdir}"
 FILES:${PN} += "/usr/lib/asteroid-pulsar.so /usr/share/translations/"
