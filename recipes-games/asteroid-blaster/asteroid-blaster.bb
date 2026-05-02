@@ -11,7 +11,8 @@ S = "${WORKDIR}/git"
 
 inherit cmake_qt5 pkgconfig
 
-DEPENDS += "qml-asteroid asteroid-generate-desktop-native qttools-native qtdeclarative-native"
+DEPENDS:append = " qml-asteroid asteroid-generate-desktop-native qttools-native qtdeclarative-native"
 
-FILES:${PN} += "/usr/share/translations/"
-FILES:${PN} += "/usr/share/icons/asteroid/asteroid-blaster.svg"
+FILES:${PN}:append = " ${libdir}"
+FILES:${PN}:append = " /usr/share/translations/"
+FILES:${PN}:append = " /usr/share/icons/asteroid/asteroid-blaster.svg"
