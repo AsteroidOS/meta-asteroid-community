@@ -4,13 +4,13 @@ LICENSE = "GPL-3.0-only"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=1ebbd3e34237af26da5dc08a4e440464"
 
 SRC_URI = "git://github.com/AsteroidOS/asteroid-sensorlogd.git;protocol=https;branch=master"
-SRCREV = "f46ac73ac2398f9dbb069012b3cf6d569760bcf0"
+SRCREV = "bdc9f0bb0fd6ef39f08fb01697d95cb2b98c86b6"
 PR = "r1"
-PV = "0.9+git${SRCPV}"
+PV = "0.91+git${SRCPV}"
 S = "${WORKDIR}/git"
 inherit qt6-cmake pkgconfig
 
-DEPENDS += "qml-asteroid asteroid-generate-desktop-native qttools qtdeclarative-native qttools-native qtsensors"
+DEPENDS += "qml-asteroid asteroid-generate-desktop-native qttools qtdeclarative-native qttools-native qtsensors mlite"
 FILES:${PN} += "/usr/lib/"
 RDEPENDS:${PN} += ""
 
