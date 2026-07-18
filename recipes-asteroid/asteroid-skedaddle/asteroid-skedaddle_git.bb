@@ -5,8 +5,8 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=1ebbd3e34237af26da5dc08a4e440464"
 
 SRC_URI = "git://github.com/beroset/asteroid-skedaddle.git;protocol=https;branch=main"
 
-PV = "1.1+git"
-SRCREV = "c84e5115a2f8b2a7ceb515472fce851e8cd8a968"
+PV = "2.0+git"
+SRCREV = "915921447263361468e49f2be068bf9a261bcd35"
 
 S = "${WORKDIR}/git"
 
