@@ -1,9 +1,9 @@
 SUMMARY = "Asteroid's qmltester app"
-HOMEPAGE = "https://github.com/MagneFire/asteroid-qmltester.git"
+HOMEPAGE = "https://github.com/AsteroidOS/asteroid-qmltester.git"
 LICENSE = "GPL-3.0-only"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=84dcc94da3adb52b53ae4fa38fe49e5d"
 
-SRC_URI = "git://github.com/MagneFire/asteroid-qmltester.git;protocol=https;branch=master"
+SRC_URI = "git://github.com/AsteroidOS/asteroid-qmltester.git;protocol=https;branch=master"
 SRCREV = "0becd0717e0d15ba07d0da208b30b6db5589e755"
 PR = "r1"
 PV = "+git${SRCPV}"
