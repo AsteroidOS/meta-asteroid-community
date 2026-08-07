@@ -7,7 +7,6 @@ SRC_URI = "git://github.com/AsteroidOS/asteroid-qmltester.git;protocol=https;bra
 SRCREV = "0becd0717e0d15ba07d0da208b30b6db5589e755"
 PR = "r1"
 PV = "+git${SRCPV}"
-S = "${WORKDIR}/git"
 inherit qt6-cmake
 
 DEPENDS += "qml-asteroid asteroid-generate-desktop-native qttools-native qtdeclarative-native"

@@ -10,7 +10,6 @@ SRC_URI = "git://github.com/MagneFire/lp-public.git;protocol=https;branch=master
 SRCREV = "5a4e358e58e5d01ef17c37b8e55ea5890c86bfd1"
 PR = "r1"
 PV = "+git${SRCPV}"
-S = "${WORKDIR}/git"
 
 INSANE_SKIP:${PN} += "already-stripped"
 

@@ -8,7 +8,6 @@ SRC_URI = "git://github.com/AsteroidOS/unofficial-watchfaces.git;protocol=https;
 SRCREV = "${AUTOREV}"
 PR = "r1"
 PV = "+git${SRCPV}"
-S = "${WORKDIR}/git"
 
 FILES:${PN} = "/usr/share/asteroid-launcher/"
 

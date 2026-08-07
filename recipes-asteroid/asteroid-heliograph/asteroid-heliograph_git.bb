@@ -7,7 +7,6 @@ SRC_URI = "git://github.com/moWerk/asteroid-heliograph.git;protocol=https;branch
 SRCREV = "612fd6b1e9229cbacb5f724bc21e239cd034f632"
 PR = "r1"
 PV = "+git${SRCPV}"
-S = "${WORKDIR}/git"
 
 inherit qt6-cmake pkgconfig
 

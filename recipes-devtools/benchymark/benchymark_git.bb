@@ -7,7 +7,6 @@ SRC_URI = "git://github.com/moWerk/benchymark.git;protocol=https;branch=main"
 # v0.2
 SRCREV = "63b7d141210b7b9c1fce2e82ccb75826a4e86714"
 PV = "0.2"
-S = "${WORKDIR}/git"
 
 inherit qt6-cmake
 

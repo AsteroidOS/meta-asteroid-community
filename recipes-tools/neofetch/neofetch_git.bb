@@ -8,7 +8,6 @@ SRC_URI = "git://github.com/dylanaraps/neofetch.git;protocol=https;branch=master
 SRCREV = "ccd5d9f52609bbdcd5d8fa78c4fdb0f12954125f"
 PR = "r1"
 PV = "+git${SRCPV}"
-S = "${WORKDIR}/git"
 
 do_install() {
     install -d ${D}${bindir}

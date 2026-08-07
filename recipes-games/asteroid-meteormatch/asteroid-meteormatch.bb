@@ -7,7 +7,6 @@ SRC_URI = "git://github.com/moWerk/asteroid-meteormatch.git;protocol=https;branc
 SRCREV = "3a597047d1e4021d8eddf715e4c6e110c04080d1"
 PR = "r1"
 PV = "+git${SRCPV}"
-S = "${WORKDIR}/git"
 
 inherit qt6-cmake pkgconfig
 
