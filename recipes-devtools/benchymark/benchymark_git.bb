@@ -4,9 +4,9 @@ LICENSE = "GPL-3.0-or-later"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=84dcc94da3adb52b53ae4fa38fe49e5d"
 
 SRC_URI = "git://github.com/moWerk/benchymark.git;protocol=https;branch=main"
-# v0.2
-SRCREV = "63b7d141210b7b9c1fce2e82ccb75826a4e86714"
-PV = "0.2"
+# v0.6
+SRCREV = "11e90920e76e6c62fe1076d4c3927b81b1154e96"
+PV = "0.6"
 S = "${WORKDIR}/git"
 
 inherit qt6-cmake
