@@ -4,11 +4,11 @@ LICENSE = "GPL-3.0-only"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=84dcc94da3adb52b53ae4fa38fe49e5d"
 
 SRC_URI = "git://github.com/beroset/asteroid-weatherfetch.git;protocol=https;branch=master"
-SRCREV = "9047883470d79b6e6383849e4d282c5f7ddd4c3c"
-PV = "2.0.0"
+SRCREV = "70044bb4904d22f521fa7eb7448d5007bd863f97"
+PV = "3.0.0"
 
 inherit qt6-cmake pkgconfig
 
-DEPENDS += "qml-asteroid asteroid-generate-desktop-native qttools-native qtdeclarative-native glibmm"
-RDEPENDS:${PN} += "nemo-qml-plugin-notifications asteroid-virtualkeyboard"
+DEPENDS += "qml-asteroid asteroid-generate-desktop-native mlite qttools-native qtdeclarative-native"
+RDEPENDS:${PN} += "nemo-qml-plugin-notifications asteroid-virtualkeyboard asteroid-btsyncd"
 FILES:${PN} += "/usr/share/translations/"
