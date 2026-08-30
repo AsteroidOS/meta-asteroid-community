@@ -8,7 +8,6 @@ SRC_URI = "git://github.com/beroset/asteroid-skedaddle.git;protocol=https;branch
 PV = "2.0+git"
 SRCREV = "915921447263361468e49f2be068bf9a261bcd35"
 
-S = "${WORKDIR}/git"
 
 inherit qt6-cmake
 

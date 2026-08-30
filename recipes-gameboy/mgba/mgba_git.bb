@@ -11,7 +11,6 @@ SRCREV = "3e86eeda7004757be9926876224af026a07f7eca"
 
 PR = "r1"
 PV = "+git${SRCPV}"
-S = "${WORKDIR}/git"
 
 inherit pkgconfig cmake
 

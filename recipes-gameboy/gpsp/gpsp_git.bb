@@ -6,7 +6,6 @@ LIC_FILES_CHKSUM = "file://COPYING.DOC;md5=892f569a555ba9c07a568a7c0c4fa63a"
 SRC_URI = "git://github.com/MagneFire/gpsp.git;protocol=https;branch=main"
 SRCREV = "d74f472b447ddd646c09c929bd7fd2419f1842f7"
 PV = "+git${SRCPV}"
-S = "${WORKDIR}/git"
 
 FILES:${PN} += "/usr/share/gpsp/"
 

@@ -27,7 +27,7 @@ SRC_URI = " \
 
 SRC_URI[sha256sum] = "052edf0afdbeb99583fe8676fb0ab80ecb6103fb88b7540f858d1b5fa1297d37"
 
-S = "${WORKDIR}/SuperTuxKart-${PV}-src"
+S = "${UNPACKDIR}/SuperTuxKart-${PV}-src"
 
 EXTRA_OECMAKE = " \
     -DUSE_GLES2=ON \

@@ -7,7 +7,6 @@ SRC_URI = "git://github.com/moWerk/asteroid-touchdown.git;protocol=https;branch=
 SRCREV = "52fcb8ee61edd890089d517cf2f580c992c12a52"
 PR = "r1"
 PV = "+git${SRCPV}"
-S = "${WORKDIR}/git"
 
 inherit qt6-cmake pkgconfig
 

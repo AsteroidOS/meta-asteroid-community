@@ -7,7 +7,6 @@ SRC_URI = "git://github.com/moWerk/asteroid-dodger.git;protocol=https;branch=mas
 SRCREV = "9643d40db9c609a006ed89a87dc1afd907492af1"
 PR = "r1"
 PV = "+git${SRCPV}"
-S = "${WORKDIR}/git"
 
 inherit qt6-cmake pkgconfig
 

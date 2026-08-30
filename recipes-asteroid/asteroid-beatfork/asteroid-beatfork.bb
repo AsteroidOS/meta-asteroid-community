@@ -6,7 +6,6 @@ SRC_URI = "git://github.com/moWerk/asteroid-beatfork.git;protocol=https;branch=m
 SRCREV = "cb81362f2c07ffb7ee07a0198f144c4069185c7c"
 PR = "r1"
 PV = "1.0+git${SRCPV}"
-S = "${WORKDIR}/git"
 inherit qt6-cmake pkgconfig
 DEPENDS += "nemo-keepalive qtmultimedia qml-asteroid asteroid-generate-desktop-native qttools-native qtdeclarative-native"
 do_install:append() {
