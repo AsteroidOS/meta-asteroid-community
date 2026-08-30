@@ -8,7 +8,6 @@ SRC_URI = "git://github.com/MagneFire/visualboyadvance-m.git;protocol=https;bran
 SRCREV = "9672a224224e08d294921fe2224e0c3330e28201"
 PR = "r1"
 PV = "+git${SRCPV}"
-S = "${WORKDIR}/git"
 
 inherit pkgconfig cmake
 

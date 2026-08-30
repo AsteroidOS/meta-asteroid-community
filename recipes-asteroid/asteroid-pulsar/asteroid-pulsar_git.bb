@@ -7,7 +7,6 @@ SRC_URI = "git://github.com/moWerk/asteroid-pulsar.git;protocol=https;branch=mai
 SRCREV = "a7b9339bc6ba882ec0717a45e2edddc1e304cd84"
 PR = "r1"
 PV = "+git${SRCPV}"
-S = "${WORKDIR}/git"
 
 inherit qt6-cmake pkgconfig
 

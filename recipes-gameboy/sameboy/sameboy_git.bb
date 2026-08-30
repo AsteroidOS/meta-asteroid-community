@@ -9,7 +9,6 @@ SRC_URI = "git://github.com/LIJI32/SameBoy.git;protocol=https;branch=master \
 SRCREV = "bb37f8d2f0a7dbfa5814e2d9faa897b52fdfd230"
 PR = "r1"
 PV = "+git${SRCPV}"
-S = "${WORKDIR}/git"
 
 
 FILES:${PN} += "/usr/share/games/sameboy/"

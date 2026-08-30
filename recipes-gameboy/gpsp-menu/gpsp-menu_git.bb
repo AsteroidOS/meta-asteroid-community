@@ -8,7 +8,6 @@ SRC_URI = "git://github.com/MagneFire/gpsp-menu.git;protocol=https;branch=main \
            "
 SRCREV = "d1b5959d9812e4766faf8dabcc82ddda8e6d3632"
 PV = "+git${SRCPV}"
-S = "${WORKDIR}/git"
 
 UPSTREAM_CHECK_COMMITS = "1"
 

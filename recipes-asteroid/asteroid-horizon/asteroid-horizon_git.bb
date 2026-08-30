@@ -7,7 +7,6 @@ SRC_URI = "git://github.com/moWerk/asteroid-horizon.git;protocol=https;branch=ma
 SRCREV = "3339b36ab549e11949f3399e49ced07e1035ee96"
 PR = "r1"
 PV = "+git${SRCPV}"
-S = "${WORKDIR}/git"
 
 inherit qt6-cmake pkgconfig
 

@@ -6,7 +6,6 @@ SRC_URI = "git://gitlab.com/OldManProgrammer/unix-tree;protocol=https;branch=mas
 PV = "2.1.1"
 SRCREV = "84fa3ddff51b30835a0f9c4a9e4c9225970f9aff"
 
-S = "${WORKDIR}/git"
 
 EXTRA_OEMAKE = "'CC=${CC}' 'RANLIB=${RANLIB}' 'AR=${AR}' \
    'CFLAGS=${CFLAGS} -I${S}/. -DWITHOUT_XATTR' 'BUILDDIR=${S}'"

@@ -9,7 +9,6 @@ SRC_URI = "git://github.com/MagneFire/Gearboy.git;protocol=https;branch=master \
 SRCREV = "c6daf2fb6d3327ec0f399ef6e4b0a59d87c45c1c"
 PR = "r1"
 PV = "+git${SRCPV}"
-S = "${WORKDIR}/git"
 
 FILES:${PN} += "/usr/lib/systemd/user/"
 

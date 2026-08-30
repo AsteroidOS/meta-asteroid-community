@@ -8,7 +8,6 @@ PR = "r0"
 
 SRC_URI = "git://github.com/Snoarlax/asteroid-hack;protocol=https;branch=master"
 SRCREV = "b2af485c78e26e18e950e3e064584b0765c163e5"
-S = "${WORKDIR}/git"
 
 EXTRA_OECMAKE += "-DCPACK_PACKAGE_CONTACT='snoarsec@gmail.com'"
 inherit qt6-cmake
