@@ -12,5 +12,5 @@ do_install:append() {
     install -d ${D}/usr/share/sounds
     install -m 0644 ${S}/src/tick.wav      ${D}/usr/share/sounds
 }
-FILES:${PN} += "/usr/share/translations/ /usr/share/sounds/"
+FILES:${PN} += "/usr/share/translations/ /usr/share/sounds/ /usr/share/ngfd/events.d/"
 
