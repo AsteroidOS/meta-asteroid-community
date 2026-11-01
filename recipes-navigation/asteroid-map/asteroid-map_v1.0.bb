@@ -4,7 +4,7 @@ LICENSE = "GPL-3.0-only"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=84dcc94da3adb52b53ae4fa38fe49e5d"
 
 SRC_URI = "git://github.com/AsteroidOS/asteroid-map.git;protocol=https;branch=master"
-SRCREV = "56a456a967b8658bcc836ed2484564e3697ee1de"
+SRCREV = "8263b2175843e83c32baee2eec5380559db2b735"
 PR = "r1"
 PV = "+git${SRCPV}"
 inherit qt6-cmake
@@ -12,7 +12,7 @@ inherit qt6-cmake
 DEPENDS += "qml-asteroid asteroid-generate-desktop-native qttools-native qtdeclarative-native qtlocation"
 RDEPENDS:${PN} += "qtlocation qtlocation-plugins qtlocation-qmlplugins"
 
-FILES:${PN} += "/usr/share/icons/asteroid"
+FILES:${PN} += "/usr/share/icons/asteroid ${libdir} /usr/bin/asteroid-map"
 
 do_install:append() {
     # This app only uses translations for the desktop shortcut.
